@@ -2,6 +2,7 @@
 <html>
 <head>
   <title> Code Z - Home </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
   <style>
     body {
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/39/SpaceX_Dragon_C2%2B_just_prior_to_Canadarm2_release_%28ISS031-E-079326%29.jpg');
@@ -9,13 +10,18 @@
       animation-name: op;
       animation-duration: 2s;
       animation-iteration-count: infinite;
+      font-family: "Audiowide", sans-serif;
     }
     @keyframes op {
-      from {opicity: 0.7;}
-      to {opicity: 1;}
+      from {background-color:rgba(0, 0, 0, 0.7);}
+      to {background-color:rgba(0, 0, 0, 1)}
+    }
+    .btn {
+       background-color:white;
     }
   </style>
 </head>
 <body>
+  <center><button class="btn" onclick="location.href='https://meet.google.com/'">Connect</button></center>
 </body>
 </html>
