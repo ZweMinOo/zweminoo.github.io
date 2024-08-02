@@ -264,6 +264,65 @@ nav ul li a:hover {
   border-radius: 5%;
 }
 
+@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 30px 0px;
+  white-space: nowrap;
+  position: relative;
+  margin-top: -10%;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255, 0.5)
+  );
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255, 0.5)
+  );
+}
+
+.logo-items {
+  display: inline-block;
+  animation: 35s slides infinite linear;
+}
+
+.logos:hover .logo-items {
+  animation-play-state: paused;
+}
+
+.logo-items img {
+  width: 10rem;
+  padding: 3rem;
+}
+
 .float-animate {
   animation: floating 3s ease-in-out infinite;
 }
@@ -322,5 +381,10 @@ nav ul li a:hover {
 
   .description-div p {
     padding: 15px;
+  }
+
+  .logo-items img {
+    width: 9rem;
+    padding: 3rem;
   }
 }
