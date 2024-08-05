@@ -145,8 +145,8 @@ nav ul li a:hover {
 }
 
 .project-body {
-  gap: 20px;
-  padding: 0 5% 0 5%;
+  gap: 10px;
+  padding: 0 10% 0 10%;
 }
 
 .project-card {
@@ -185,7 +185,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   background-color: rgba(50, 50, 50, 0.4);
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 600;
   color: white;
 }
