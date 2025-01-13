@@ -268,6 +268,28 @@ nav ul li a:hover {
   border-radius: 5%;
 }
 
+.info {
+  position: fixed;
+  color: aqua;
+  font-weight: bold;
+  font-size: 2.6rem;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 7px;
+  border-radius: 5%;
+  z-index: 200;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(3, 194, 194);
+}
+
+.info:hover {
+  transition-duration: 1s;
+  font-size: 2.7rem;
+}
+
 @keyframes slides {
   from {
     transform: translateX(0);
@@ -419,5 +441,14 @@ nav ul li a:hover {
     top: 0;
     bottom: auto;
     opacity: 0.3;
+  }
+
+  .info {
+    font-size: 2.4rem;
+    bottom: 4rem;
+  }
+
+  .info:hover {
+    font-size: 2.5rem;
   }
 }
